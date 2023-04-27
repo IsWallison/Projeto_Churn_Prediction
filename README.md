@@ -7,10 +7,10 @@ Churn rate, ou simplesmente churn, representa a taxa de evasão da sua base de c
 Ela é de extrema importância para a administração e sua análise ao longo do tempo pode mostrar que existe algum problema que deve ser atacado.
 Churn também pode ser usado para identificar potenciais cancelamentos, com um tempo de antecedência, e promover ações direcionadas para tentar reter tais clientes. Essa métrica deve receber atenção pelo fato de que o Custo de Aquisição de Cliente (CAC) é normalmente mais alto que o custo para mantê-los. Ou seja, um alto valor para o churn rate é o que não desejamos.
 
-Dataset
+# Dataset
 O conjunto de dados pode ser facilmente encontrado aqui: https://raw.githubusercontent.com/carlosfab/dsnp2/master/datasets/WA_Fn-UseC_-Telco-Customer-Churn.csv
 
-Bibliotecas necessárias
+# Bibliotecas necessárias
 * Pandas
 * Matplotlib
 * Seaborn
@@ -21,7 +21,7 @@ Bibliotecas necessárias
 Você também precisará de um software que possa executar um notebook python .ipynb
 
 
-8 modelos foram utilizados para avaliar seu desempenho na base de dados.:
+# 8 modelos foram utilizados para avaliar seu desempenho na base de dados.:
 
 * SVC
 * KNeighborsClassifier
@@ -53,7 +53,7 @@ DecisionTreeClassifier	|0.708749	|0.704464	|0.010
 DecisionTreeClassifier Scale	|0.685344	|0.683204	|0.006
 
 
-Conclusão
+# Conclusão
 Dadas as características do problema e o desempenho durante as execuções anteriores, optei pela Regressão Logística.
 A partir da aplicação dos parâmetros encontrados através da otimização dos hiperparâmetros, foi criado um modelo de regressão logística com C=0.1, fit_intercept=False, penalty=l1 e solver=liblinear.
 
